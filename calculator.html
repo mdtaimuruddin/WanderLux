@@ -1,7 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Estimate the cost of your next WanderLux journey."><title>Trip Calculator | WanderLux</title><link rel="stylesheet" href="style.css"></head>
-<body><nav class="site-nav" aria-label="Main navigation"><a class="brand" href="index.html">Wander<span>Lux</span></a><div class="nav-links"><a href="index.html">Home</a><a href="destinations.html">Services</a><a aria-current="page" href="calculator.html">Trip calculator</a><a href="appointment.html">Appointment</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></nav>
-<header class="page-header"><p class="eyebrow">Start with a number</p><h1>What could your trip cost?</h1><p>A quick estimate to help shape the first version of your journey.</p></header>
-<main class="container calculator-layout fade-in"><form id="calculator-form" novalidate><p class="eyebrow">Your preferences</p><h2>Make it yours.</h2><label for="destination">Destination</label><select id="destination" required><option value="Bali">Bali</option><option value="Japan">Japan</option><option value="Paris">Paris</option><option value="New Zealand">New Zealand</option></select><label for="travellers">Number of travellers</label><input id="travellers" type="number" min="1" max="20" value="2" required><label for="days">Number of days</label><input id="days" type="number" min="1" max="60" value="5" required><fieldset><legend>Travel style</legend><label><input type="radio" name="style" value="Budget"> Budget</label><label><input type="radio" name="style" value="Standard" checked> Standard</label><label><input type="radio" name="style" value="Luxury"> Luxury</label></fieldset><button class="button" type="submit">Estimate my trip</button><p class="form-message" id="calculator-error" role="alert"></p></form><aside class="estimate-panel" aria-live="polite"><p class="eyebrow">Your estimate</p><div id="result"><strong>$2,450</strong><p>Estimated cost for 2 travellers to Bali for 5 days: $2,450 - Standard Travel Package.</p></div><small>Indicative pricing includes accommodation, daily travel and core experiences. Your consultant will refine the details.</small></aside></main>
-<footer><strong>WanderLux</strong> · Independent travel planning since 2008</footer><script src="script.js"></script></body></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estimate the cost of your next WanderLux journey.">
+    <title>Trip Calculator | WanderLux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="site-nav" aria-label="Main navigation"><a class="brand" href="index.html">Wander<span>Lux</span></a>
+        <div class="nav-links"><a href="index.html">Home</a><a href="destinations.html">Services</a><a
+                aria-current="page" href="calculator.html">Trip calculator</a><a
+                href="appointment.html">Appointment</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header class="page-header">
+        <p class="eyebrow">Start with a number</p>
+        <h1>What could your trip cost?</h1>
+        <p>A quick estimate to help shape the first version of your journey.</p>
+    </header>
+    <main class="container calculator-layout fade-in">
+        <form id="calculator-form" novalidate>
+            <p class="eyebrow">Your preferences</p>
+            <h2>Make it yours.</h2>
+            <label for="destination">Destination</label><select id="destination" required>
+                <option value="Bali">Bali</option>
+                <option value="Japan">Japan</option>
+                <option value="Paris">Paris</option>
+                <option value="New Zealand">New Zealand</option>
+            </select><label for="travellers">Number of travellers</label><input id="travellers" type="number" min="1"
+                max="20" value="2" required><label for="days">Number of days</label>
+            <input id="days" type="number" min="1" max="60" value="5" required>
+            <fieldset>
+                <legend>Travel style</legend><label><input type="radio" name="style" value="Budget">
+                    Budget</label><label><input type="radio" name="style" value="Standard" checked>
+                    Standard</label><label><input type="radio" name="style" value="Luxury"> Luxury</label>
+            </fieldset><button class="button" type="submit">Estimate my trip</button>
+            <p class="form-message" id="calculator-error" role="alert"></p>
+        </form>
+        <aside class="estimate-panel" aria-live="polite">
+            <p class="eyebrow">Your estimate</p>
+            <div id="result"><strong>$2,450</strong>
+                <p>Estimated cost for 2 travellers to Bali for 5 days: $2,450 - Standard Travel Package.</p>
+            </div><small>Indicative pricing includes accommodation, daily travel and core experiences. Your consultant
+                will refine the details.</small>
+        </aside>
+    </main>
+    <footer><strong>WanderLux</strong> · Independent travel planning since 2008</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
